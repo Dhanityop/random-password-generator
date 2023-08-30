@@ -93,3 +93,34 @@ body {
 .password-container:focus {
     border: 3px solid #ffd09a;
 }
+
+@media (max-width: 550px) {
+    .heading {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+
+    .sub-heading {
+        font-size: 0.8rem;
+        margin: 2rem 0;
+    }
+
+    #generate-password {
+        font-size: 0.8rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .divider {
+        margin: 3rem 0 1.5rem 0;
+    }
+
+    .passwords {
+        gap: 15px;
+        grid-template-columns: repeat(2, 135px);
+    }
+
+    .password-container {
+        font-size: 0.75rem;
+    }
+
+}
