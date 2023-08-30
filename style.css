@@ -62,7 +62,6 @@ body {
 }
 
 .divider {
-    width: 80%;
     border: 1px solid #F8CBA6;
     margin: 4rem 0 2rem 0;
 }
@@ -71,7 +70,6 @@ body {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 210px);
-    grid-auto-flow: row;
 }
 
 .password-container {
@@ -117,11 +115,16 @@ body {
 
     .passwords {
         gap: 15px;
-        grid-template-columns: repeat(2, 135px);
+        grid-template-columns: repeat(2, minmax(120px, 210px));
     }
 
     .password-container {
         font-size: 0.75rem;
     }
+}
 
+@media (max-width: 320px) {
+    .passwords {
+        grid-template-columns: 1fr;
+    }
 }
